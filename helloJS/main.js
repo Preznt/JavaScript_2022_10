@@ -37,6 +37,6 @@ const 우리나라만세 = "Republic of Korea"
  */
 document.write(우리나라만세)
 
-documedt.write
+
 
 
