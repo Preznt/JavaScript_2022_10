@@ -21,5 +21,6 @@ btnCacl?.addEventListener("click", () => {
    */
 });
 
-document.write(parseInt(5.5645));
-document.write(parseFloat(10.789));
+const divs = document.querySelectorAll("div");
+divs[0].innerText = parseInt(5.879);
+divs[1].innerText = parseFloat(10.789)
