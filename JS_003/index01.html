@@ -9,11 +9,11 @@
     form을 사용할 때 내부에 button있으면
     button 클릭하면 자동으로  form의 submit이 작동한다
     form submit이 작동하지 않도록 하는 방법에는 여러기법이 있는데
-    form 에 button이 있을 떄는 button의 type을 buttonn으로 설정한다
+    form 에 button이 있을 때는 button의 type을 buttonn으로 설정한다
     이때는 form의 submit event 를 설정하지 않아야 한다
 
     form 의 submit event 를 사용하고자 할떄는
-    form tag 에 onsubmit="resunt false" 를 설정해야 한다
+    form tag 에 onsubmit="return false" 를 설정해야 한다
   -->
   <form>
     <input id="num1" placeholder="숫자1" />
