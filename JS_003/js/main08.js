@@ -33,5 +33,5 @@ console.log("합계 : ", sum);
  * for (let i = 0; nums[i] % 2 == 0; i++) {
   console.log(nums[i]);
 }
-이건 바로  FALS라 안됨
+이건 바로  FALSE라 안됨
  */
