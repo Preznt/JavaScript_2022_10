@@ -23,6 +23,8 @@ btnSearch?.addEventListener("click", () => {
   //     alert("팝업이 차단되었습니다\n팝업 차단을 해제 해주세요");
   //     return false;
   //   }
+  //window.open을 사용 할 때는 팝업이 차단되면 크기가 0으로 설정이 되어 체크 항목으로 사용
+
   window.open(`${naverURL}?query=${txtSearch}`, "_blank");
   window.open(`${daumURL}?q=${txtSearch}`, "_blank");
 });
