@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(232, 210, 253);
+      }
+      div {
+        text-align: center;
+        margin: 15px auto;
+      }
+      input {
+        padding: 8px 16px;
+        margin: 10px;
+        border-radius: 5px;
+        outline: none;
+      }
+      button {
+        padding: 7px 16px;
+        width: 10%;
+        color: white;
+        background-color: rgb(156, 61, 194);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      table {
+        width: 50%;
+        margin: 10px auto;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        text-align: center;
+        border: 1px solid rgb(199, 135, 213);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>나의 친구들</h1>
+    </header>
+    <section>
+      <table>
+        <thead>
+          <th>이름</th>
+          <th>주소</th>
+          <th>전화번호</th>
+        </thead>
+        <tbody class="tbody_add"></tbody>
+      </table>
+
+      <div>
+        <input name="name" placeholder="이름" />
+        <input name="addr" placeholder="주소" />
+        <input name="tel" placeholder="전화번호" />
+        <button class="btn_ok">추가</button>
+      </div>
+    </section>
+  </body>
+  <script src="js/main04.js"></script>
+</html>
