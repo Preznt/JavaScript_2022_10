@@ -51,10 +51,10 @@ const scoreInput = () => {
     tr.appendChild(td);
     // 조건 학번을 단순한 숫자로 처리하지 말것
     // S001 이런 방식으로 학번 문자열로 처리하기
-    // if (Number(index.value)) {
+
     //input tag의 name 속성이 sc_num가 아니고
     //sc_name 도 아닐 경우에만 sum에 누적하기
-
+    // if (Number(index.value)) {
     if (input.name !== "sc_num" && input.name !== "sc_name") {
       sum += Number(input.value);
     }

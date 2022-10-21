@@ -73,7 +73,7 @@ const addrInput = () => {
   // 데이터만 저장할 수있다
   // 우리가 만든 addrList 는 객체를 배열로 만든 데이터이다
   // 이 데이터를 바로 localStorage에 보관할 수 없다
-  // JSON style의 문자열로 변환하여
+  // JSON style의 문자열로 변환하여s
   // 보관하기 JSON.stringify()함수를 사용한다
 
   // JSON.stringify()함수는 Javascript 에서 사용하는 어떤 데이터든지
