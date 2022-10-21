@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+header {
+  padding: 20px;
+  background-color: rgb(98, 235, 189);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
+}
+
+section.main {
+  flex: 1;
+}
+
+table.score_chart {
+  display: flex;
+  text-align: center;
+  margin: 20px auto;
+}
