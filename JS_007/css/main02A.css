@@ -1,9 +1,3 @@
-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
 header {
   padding: 20px;
   background-color: rgb(98, 235, 189);
@@ -13,12 +7,45 @@ header {
   box-shadow: 2px 2px 2px black;
 }
 
-section.main {
-  flex: 1;
+table,
+div {
+  width: 80%;
+  margin: 10px auto;
 }
 
-table.score_chart {
-  display: flex;
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  padding: 5px;
   text-align: center;
-  margin: 20px auto;
+}
+
+div {
+  border: 1px solid #aaa;
+}
+
+div.input_box {
+  display: flex;
+}
+
+div.input_box input {
+  flex: 1;
+  padding: 8px;
+  margin: 5px;
+}
+
+div.input_box button {
+  padding: 12px 16px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  white-space: nowrap;
 }

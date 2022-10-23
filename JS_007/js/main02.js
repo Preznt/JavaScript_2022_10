@@ -88,7 +88,7 @@ const localInput = () => {
     eng: inputs[3].value,
     math: inputs[4].value,
     score: sum,
-    avg: sum / 3,
+    avg: Math.floor(sum / 3),
   };
 
   score.push(addr);
@@ -104,6 +104,12 @@ const localInput = () => {
   tr.appendChild(td);
 
   tbody.appendChild(tr);
+
+  inputs.forEach((input) => {
+    input.value = "";
+  });
+
+  inputs[0].focus();
 };
 
 btn?.addEventListener("click", () => {
