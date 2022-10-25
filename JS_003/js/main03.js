@@ -30,6 +30,10 @@ btn.addEventListener("click", () => {
   num1s[2].innerText = intNum1;
   num1s[3].innerText = intNum1;
 
+  // num1s.forEach((num) => {
+  //   num.innerText = intNum1;
+  // });
+
   num2s[0].innerText = intNum2;
   num2s[1].innerText = intNum2;
   num2s[2].innerText = intNum2;

@@ -8,7 +8,11 @@ for (let i = 0; i < 10; i++) {
   nums[i] = intNum;
 }
 
-// console.log(nums);
+// nums.forEach((num) => {
+//   const rndNum = Math.random() * 100 + 1;
+//   const intNum = Math.floor(rndNum);
+//   num = intNum;
+// });
 
 nums.forEach((num) => {
   document.writeln(num);
