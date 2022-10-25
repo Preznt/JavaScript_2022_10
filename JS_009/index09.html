@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let num1 = 100;
+    let num2 = 200;
+    document.writeln(num1 + num2);
+    // num1,num2 라는 변수는메모리의 누수, 쓸데없이 기억장소를 차지하고 있다
+
+    const init = () => {
+      let num1 = 200;
+      let num2 = 300;
+      document.writeln(num1 + num2);
+    };
+    // 한번 출력하면 끝내겠다라는 21번에서 실행될때 num1, num2가 소멸된다
+    init();
+
+    // IIFE(Immediately Invoked Function Expression)
+    // 즉시 실행 함수
+    // 스크립트가 시작될때
+    // 최초에 단 한번만 실행하고 더이상 실행할 이유가
+    // 없는 함수 선언하고 "즉시 실행(함수의 즉시 실행)"
+    // 이 함수는 이름이 없는 무명함수이며
+    // 한번만 실행되고 소멸된다
+    // 메모리 leak (누수) 방지 = 사용하지 않는 메모리 공간 낭비를 방지
+    (() => {
+      let num1 = 22;
+      let num2 = 33;
+      document.writeln(num1 + num2);
+    })();
+    // 함수를 차지하는 공간도 줄일수 있다
+    // js에만 있는 문법이다
+    // 메모리를 많이쓰면 브라우저가 무거워져서 화면이 늦게뜨는 현상이 발생할 수 있다
+
+    (function () {
+      document.writeln("즉시실행 함수");
+    })();
+  </script>
+</html>
