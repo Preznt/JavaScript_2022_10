@@ -18,6 +18,7 @@
 ### Web Application Server 를 구축하기 위한 도구 설치
 
 - express 설치하기 : 프로젝트 폴더에서 `npm install -save express`  
+  여기서 -g는 그룹으로
   이 명령을 실행하면 package.json 에 dependencies 항목이 생성되고
   node_modulse 폴더가 생성된 후 필요한 3rd party 도구들이 자동
   다운로드되어 포함된다.
